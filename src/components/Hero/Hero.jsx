@@ -4,7 +4,9 @@ import Header from '../Header/Header';
 import Heart from "../../assets/heart.png";
 import hero_image from "../../assets/hero_image.png";
 import hero_image_back from "../../assets/hero_image_back.png";
-import Calories from "../../assets/calories.png"
+import Calories from "../../assets/calories.png";
+import Login from '../Login/Login';
+import { Link } from 'react-router-dom'
 
 import {motion} from 'framer-motion'
 import NumberCounter from 'number-counter';
@@ -12,6 +14,7 @@ const hero = () => {
   const transition = {type: 'spring',duration: 3}
   const mobile = window.innerWidth<=768 ? true: false;
   return (
+
     <div className="hero" id="Home">
       <div className="blur hero-blur"></div>
         <div className="left-h">
@@ -79,9 +82,11 @@ const hero = () => {
 
         <div className="right-h">
            {/*join now button */}
+           <Link to="/login">
           <button className="btn">
             Join Now
           </button>
+          </Link>
 
           {/*Right Side Text */}
           <motion.div
@@ -116,7 +121,10 @@ const hero = () => {
         {/* Hero Images */}
        
     </div>
+   
   )
+  
+ 
 }
 
 export default hero
