@@ -12,13 +12,53 @@
   backdrop-filter: blur(10px);
   padding: 20px;
   border-radius: 10px;
-  animation: slideRight 1s ease-in-out;
   width: 300px;
+  animation-duration: 1s;
 }
 
-.login-form {
-  display: flex;
-  flex-direction: column;
+.slideRight {
+  animation-name: slideRight;
+}
+
+.slideTop {
+  animation-name: slideTop;
+}
+
+.slideLeft {
+  animation-name: slideLeft;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .login-form-group {
@@ -37,58 +77,62 @@
 }
 
 .login-form-group input {
-  /* width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc; */
   margin-left: 10px;
   border-radius: 20px;
 }
 
 .login-form-group .login-btn {
-  /* width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #007bff;
+  animation: none;
+  width: 50%;
+  padding: 12px 10px;
+  background-color: #055486;
   color: #fff;
   border: none;
-  cursor: pointer; */
-  animation: none; /* Remove the animation */
-  width: 100%; 
+  cursor: pointer;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
-.login-form-group .switch-btn {
-  /* width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #dc3545;
-  color: #fff;
-  border: none;
-  cursor: pointer; */
-  animation: none; /* Remove the animation */
-  width: 100%; 
-  }
+.login-form-group .larger {
+  width: 70%;
+}
 
-  @keyframes slideRight {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
+.login-form-group .switch-link {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.login-form-group .switch-link span {
+  color: black;
+  margin-right: 10px;
+}
+
+.login-form-group .switch-link a {
+  color: #dc3545;
+  text-decoration: none;
+}
+
+.login-form-group .switch-link a:hover {
+  text-decoration: underline;
+}
+
+/* Random Animations */
+.login-container.slideRight .login-content {
+  animation-name: slideRight;
+}
+
+.login-container.slideTop .login-content {
+  animation-name: slideTop;
+}
+
+.login-container.slideLeft .login-content {
+  animation-name: slideLeft;
+}
+
+/* Your existing CSS styles can be placed below this point */
+/* ... */

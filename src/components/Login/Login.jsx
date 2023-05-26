@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 import Register from "../Register/Register";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [isRegistered, setIsRegistered] = useState(true);
@@ -14,8 +14,14 @@ const Login = () => {
     // Handle login logic here
   };
 
+  const getRandomAnimation = () => {
+    const animations = ["slideRight", "slideTop", "slideLeft"];
+    const randomAnimation = animations[Math.floor(Math.random() * animations.length)];
+    return randomAnimation;
+  };
+
   return (
-    <div className="login-container">
+    <div className={`login-container ${getRandomAnimation()}`}>
       <div className="login-content">
         <div className="login-form">
           <div className="login-form-group">
@@ -27,14 +33,13 @@ const Login = () => {
             <input type="password" name="password" placeholder="Password" />
           </div>
           <div className="login-form-group">
-            <button type="button" className="login-btn" onClick={handleLoginClick}>
+            <button type="button" className="login-btn larger" onClick={handleLoginClick}>
               Login
             </button>
-            <Link to="/Register">
-            <button type="button" className="switch-btn" onClick={handleSwitchToRegister}>
-              Don't have an account? Register
-            </button>
-            </Link>
+            <div className="switch-link">
+              <span>Don't have an account? </span>
+              <Link to="/Register">Register</Link>
+            </div>
           </div>
         </div>
       </div>
