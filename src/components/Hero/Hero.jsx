@@ -6,6 +6,7 @@ import hero_image from "../../assets/hero_image.png";
 import hero_image_back from "../../assets/hero_image_back.png";
 import Calories from "../../assets/calories.png";
 import Login from '../Login/Login';
+import Register from "../Register/Register"
 import { Link } from 'react-router-dom'
 
 import {motion} from 'framer-motion'
@@ -82,7 +83,7 @@ const hero = () => {
 
         <div className="right-h">
            {/*join now button */}
-           <Link to="/login">
+           <Link to="/Register">
           <button className="btn">
             Join Now
           </button>
