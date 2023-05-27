@@ -14,11 +14,12 @@
     text-transform: uppercase;
     font-style: italic;
 }
-.program-categories{
-     display: flex;
-     gap: 1rem;
-}
-.category{
+.program-categories {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .category {
     display: flex;
     flex-direction: column;
     background-color: gray;
@@ -26,31 +27,45 @@
     gap: 1rem;
     color: white;
     justify-content: space-between;
-}
-.category>:nth-child(1){
+    text-decoration: none;
+    height: 12rem;
+  }
+  
+  .category > :nth-child(1) {
     width: 2rem;
-    height: 2rem;
+    height: 2 rem;
     fill: white;
-}
-.category>:nth-child(2){
+  }
+  
+  .category > :nth-child(2) {
     font-size: 1rem;
     font-weight: bold;
-}
-.category>:nth-child(3){
+  }
+  
+  .category > :nth-child(3) {
     font-size: 0.9rem;
     line-height: 25px;
-}
-.join-now{
+  }
+  
+  .join-now {
     display: flex;
-    align-items: center;gap: 2rem;
-}
-.join-now>img{
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .join-now > img {
     width: 1rem;
-}
-.category:hover{
+  }
+  
+  .category:hover {
     background: var(--planCard);
     cursor: pointer;
-}
+  }
+  
+  .category-link {
+    text-decoration: none; /* Add this line to remove underline from the link */
+  }
+  
 
 @media screen and (max-width:768px) {
 

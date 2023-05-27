@@ -14,14 +14,13 @@
     
 }
 
-.right-h{
-    flex:1;
+.right-h {
+    flex: 1;
     position: relative;
     background-color: var(--orange);
     border: 20rem;
     border-color: var(--blue);
-    
-}
+  }
 
 .the-best-ad{
     margin-top: 4rem;
@@ -99,7 +98,7 @@
     width: 6rem;
     background-color: var(--orange);
     text-align: center;
-
+    text-decoration: none;
 }
 
 .Hero-Button>:nth-child(2){
@@ -107,16 +106,17 @@
     background-color: transparent;
     width: 8rem;
     border: 2px solid var(--orange);
-
-
+    text-align: center;
+    text-decoration: none;
 }
 
-.right-h>.btn{
+.right-h .btn-link {
     position: absolute;
     right: 3rem;
     top: 2rem;
     color: black;
-} 
+    text-decoration: none; /* Add this line to remove underline from the link */
+  }
 
 .heart-rate{
     display: flex;

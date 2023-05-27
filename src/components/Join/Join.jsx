@@ -23,8 +23,8 @@ const Join = () => {
         <div className="right-j">
             <form className="email-container">
                 <input type="email" name='user_email' placeholder='Enter your Email Address here'   />
-                <Link to="/Contact">
-                <button className="btn btn-j">Join now</button>
+                <Link to="/Contact" className="btn btn-j">
+                <buttons>Join now</buttons>
                 </Link>
             </form>
         </div>

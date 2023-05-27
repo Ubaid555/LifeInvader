@@ -84,9 +84,13 @@
     fill: white;
 }
 
-.plans>:nth-child(2)>button{
-    color: orange;   
+.btn{
+    text-decoration: none;
+    text-align: center;
+    font-size: small;
+    color: black;
 }
+
 
 @media screen and (max-width:768px) {
     .plans{

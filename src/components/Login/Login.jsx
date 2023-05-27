@@ -25,8 +25,8 @@ const Login = () => {
       <div className="login-content">
         <div className="login-form">
           <div className="login-form-group">
-            <label htmlFor="username">Username</label>
-            <input type="text" name="username" placeholder="Username" />
+            <label htmlFor="email">Email</label>
+            <input type="text" name="email" placeholder="Email" />
           </div>
           <div className="login-form-group">
             <label htmlFor="password">Password</label>

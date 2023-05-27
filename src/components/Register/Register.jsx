@@ -31,8 +31,8 @@ const Register = () => {
     if (!password) {
       setPasswordError("Please fill out the field");
       isValid = false;
-    } else if (!/[a-z]/.test(password) || !/[A-Z]/.test(password)) {
-      setPasswordError("Password must contain a combination of upper and lowercase alphabets");
+    } else if (!/^(?=.*[a-zA-Z]).{6,}$/.test(password)) {
+      setPasswordError("Password must contain at least six alphabets or a combination of upper and lowercase alphabets");
       isValid = false;
     } else {
       setPasswordError("");
@@ -96,7 +96,7 @@ const Register = () => {
             <input type="text" name="phone" placeholder="Phone Number" value={phone} onChange={(e) => setPhone(e.target.value)} />
             {phoneError && <p className="alert-message">⚠️ {phoneError}</p>}
           </div>
-          <div className="register-form-group">
+          <div className="register-form-group-plan">
             <label htmlFor="plan">Plans</label>
             <div className="register-radio-group">
               <label>

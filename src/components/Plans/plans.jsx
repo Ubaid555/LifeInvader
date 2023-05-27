@@ -2,6 +2,7 @@ import React from 'react'
 import {plansData} from '../../data/plansData'
 import whiteTick from '../../assets/whiteTick.png'
 import './plans.css'
+import { Link } from "react-router-dom";
 
 function Plans() {
   return (
@@ -31,7 +32,9 @@ function Plans() {
                     </div>
 
                     <div><span>See more benefits  </span></div>
-                    <button className="btn">Join Now</button>
+                    <Link to="/Register" className="btn">
+                    <buttons >Join Now</buttons>
+                    </Link>
                 </div>
             ))}
         </div>

@@ -39,6 +39,17 @@
 .register-form-group input {
   margin-left: 10px;
   border-radius: 20px;
+  float: right;
+  align-self: right;
+  direction: ltr;
+}
+
+.register-form-group-plan {
+  margin-bottom: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
 }
 
 .register-form-group .register-btn {

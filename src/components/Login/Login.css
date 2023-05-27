@@ -74,12 +74,22 @@
   text-transform: uppercase;
   color: black;
   font-weight: bold;
+  align-self: flex-start;
 }
 
 .login-form-group input {
   margin-left: 10px;
   border-radius: 20px;
+  float: right;
+  align-self: right;
+  direction: ltr;
 }
+
+.login-form-group input::placeholder {
+  text-align: left;
+  direction: ltr;
+}
+
 
 .login-form-group .login-btn {
   animation: none;
