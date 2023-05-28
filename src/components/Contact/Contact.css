@@ -14,9 +14,8 @@
   justify-content: center;
   align-items: center;
   height: auto;
-  width: auto;
+  width: 80%;
   backdrop-filter: blur(10px);
-  animation-duration: 1s;
 }
 
 .slideRight {
@@ -68,6 +67,7 @@
   width: 55%;
   padding: 2rem;
   text-align: center;
+  animation-duration: 1s;
 }
 
 .contact-information h2 {
@@ -119,6 +119,7 @@
   width: 75%;
   padding: 2rem;
   text-align: center;
+  animation-duration: 1s;
 }
 
 .information-form h2 {
@@ -130,15 +131,16 @@
 }
 
 .information-form input {
-  width: 95%;
+  width: 40%; /* Adjust the width as per your preference */
   margin-bottom: 1rem;
   padding: 0.5rem;
   margin-left: 10px;
   border-radius: 20px;
 }
 
+
 .information-form textarea {
-  width: 95%;
+  width: 80%;
   height: 4em; /* Adjust the height as needed */
   margin-bottom: 1rem;
   padding: 0.5rem;

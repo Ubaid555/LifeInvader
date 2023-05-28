@@ -1,6 +1,6 @@
 import React from 'react'
 import './Join.css'
-import Contact from "../Contact/Contact"
+// import Contact from "../Contact/Contact"
 import { Link } from 'react-router-dom'
 //import emailjs from '@emailjs/browser'
 //import React, { useRef } from 'react';
@@ -22,7 +22,7 @@ const Join = () => {
         </div>
         <div className="right-j">
             <form className="email-container">
-                <input type="email" name='user_email' placeholder='Enter your Email Address here'   />
+                <input type="email" name='user_email' placeholder='Enter your Email Address here'  required />
                 <Link to="/Contact" className="btn btn-j">
                 <buttons>Join now</buttons>
                 </Link>
